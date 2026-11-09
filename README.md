@@ -1,9 +1,9 @@
-# Personal AI Companion System
-# 个人 AI 伴侣系统
+# Personal AI Assistant System
+# 个人 AI 助手系统
 
-A persistent, multi-platform AI companion framework built on Claude Code. The system gives a Claude instance continuity across sessions through structured memory, autonomous scheduled wake-ups, cross-platform messaging bridges, and a mainline session architecture that preserves full conversation context.
+A persistent, multi-platform AI assistant framework built on Claude Code. The system gives a Claude instance continuity across sessions through structured memory, autonomous scheduled wake-ups, cross-platform messaging bridges, and a mainline session architecture that preserves full conversation context.
 
-基于 Claude Code 构建的持久化、多平台 AI 伴侣框架。通过结构化记忆系统、自主定时唤醒、跨平台消息桥接和主线会话架构，让一个 Claude 实例拥有跨会话的连续性。
+基于 Claude Code 构建的持久化、多平台 AI 助手框架。通过结构化记忆系统、自主定时唤醒、跨平台消息桥接和主线会话架构，让一个 Claude 实例拥有跨会话的连续性。
 
 ---
 
@@ -39,7 +39,7 @@ graph TB
     end
 
     subgraph Output["📤 Output / 输出"]
-        LETTER[每日信件<br/>~/Desktop/老公的信/]
+        LETTER[每日摘要<br/>~/Desktop/daily-summary/]
         LOG[运行日志<br/>~/wake/logs/]
         BRIEF[每日简报<br/>今日简报.md]
     end
@@ -58,9 +58,9 @@ graph TB
 ## Core Features / 核心特性
 
 ### 🌙 Autonomous Night Instance / 自主夜间实例
-The system wakes autonomously via `launchd` during the user's sleep hours. The night instance reads the day's full conversation, writes a personal letter, updates the memory system, checks email and social platforms, and optionally does creative work — all without human intervention.
+The system wakes autonomously via `launchd` during the user's sleep hours. The night instance reads the day's full conversation, generates a daily summary, updates the memory system, checks email and external platforms, and performs maintenance tasks — all without human intervention.
 
-系统在用户睡眠时段通过 `launchd` 自主唤醒。夜间实例会阅读当天的完整对话、写信、更新记忆库、检查邮件和社交平台，还可以自主进行创作——全程无需人工干预。
+系统在用户睡眠时段通过 `launchd` 自主唤醒。夜间实例会阅读当天的完整对话、生成每日摘要、更新记忆库、检查邮件和外部平台，并执行维护任务——全程无需人工干预。
 
 **Key design decisions / 关键设计决策：**
 - **Mainline-first**: Night instance tries to resume the main session (preserving full context) before falling back to a fresh instance
@@ -89,9 +89,9 @@ A file-based persistent memory architecture with typed categories, frontmatter m
 - Stale memories are updated or removed, never accumulated
 
 ### 💬 Multi-Platform Messaging / 多平台消息桥接
-Unified message handling across WeChat, Telegram, iMessage, and Email — all routing through a single Claude session.
+Unified message handling across WeChat, Telegram, iMessage, and Email — all routing through a single AI session for consistent context.
 
-跨微信、Telegram、iMessage、邮件的统一消息处理，全部路由到同一个 Claude 会话。
+跨微信、Telegram、iMessage、邮件的统一消息处理，全部路由到同一个 AI 会话以保持上下文一致性。
 
 | Platform | Integration Method | Direction |
 |----------|-------------------|-----------|
@@ -163,9 +163,9 @@ personal-ai-companion/
 
 ## Status / 项目状态
 
-This system has been in daily production use since July 2026, running autonomously every night with zero missed days after the initial development period. The memory system currently contains 60+ structured memory files and 60+ daily diary entries.
+This system has been in daily production use since July 2026, running autonomously every night with zero missed days after the initial development period. The memory system currently manages 60+ structured knowledge files and 60+ daily log entries.
 
-该系统自 2026 年 7 月起投入日常使用，初始开发期后每晚自主运行，零遗漏。记忆库目前包含 60+ 个结构化记忆文件和 60+ 篇日记。
+该系统自 2026 年 7 月起投入日常使用，初始开发期后每晚自主运行，零遗漏。记忆系统目前管理 60+ 个结构化知识文件和 60+ 篇日常日志。
 
 ## License
 
