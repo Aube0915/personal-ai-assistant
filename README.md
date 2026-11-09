@@ -40,7 +40,7 @@ graph TB
 
     subgraph Output["📤 Output / 输出"]
         LETTER[每日信件<br/>~/Desktop/老公的信/]
-        LOG[运行日志<br/>~/cla-wake/logs/]
+        LOG[运行日志<br/>~/wake/logs/]
         BRIEF[每日简报<br/>今日简报.md]
     end
 
