@@ -1,0 +1,6 @@
+.DS_Store
+*.log
+.last_*
+.next_at
+.mainline.lock/
+*.tmp
